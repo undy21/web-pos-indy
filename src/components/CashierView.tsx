@@ -744,8 +744,10 @@ export default function CashierView({
               >
                 {/* Brand Header */}
                 <h3 className="text-sm font-black text-slate-950 uppercase tracking-widest font-sans">KEDAI NUSANTARA POS</h3>
-                <p className="text-[9px] text-slate-500 mt-1 uppercase font-sans">Cabang: {recentTrx.transaction.branchId === 'b1' ? 'Jakarta Selatan' : 'Bandung'}</p>
-                <p className="text-[8px] text-slate-400 font-sans mt-0.5">Sudirman No. 45 • Telp: 021-5551234</p>
+                <p className="text-[9px] text-slate-500 mt-1 uppercase font-sans">Cabang: {recentTrx.transaction.branchId === 'b1' ? 'Lahat' : 'Pagar Alam'}</p>
+                <p className="text-[8px] text-slate-400 font-sans mt-0.5">
+                  {recentTrx.transaction.branchId === 'b1' ? 'Jl. Mayor Ruslan No. 45 • Telp: 0731-555123' : 'Jl. Kombes H. Umar No. 102 • Telp: 0730-444567'}
+                </p>
                 <div className="border-b border-dashed border-slate-300 my-3"></div>
 
                 {/* Subinfo header */}

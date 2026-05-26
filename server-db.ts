@@ -14,13 +14,13 @@ function ensureDbDir() {
 const INITIAL_USERS = [
   { id: 'u1', username: 'admin', name: 'Super Admin', role: 'ADMIN', branchId: 'b1', active: true, password: 'admin' },
   { id: 'u2', username: 'owner', name: 'ndy (Owner)', role: 'OWNER', branchId: 'all', active: true, password: 'owner' },
-  { id: 'u3', username: 'kasir1', name: 'Siti (Kasir Jakarta)', role: 'CASHIER', branchId: 'b1', active: true, password: 'kasir1' },
-  { id: 'u4', username: 'kasir2', name: 'Andi (Kasir Bandung)', role: 'CASHIER', branchId: 'b2', active: true, password: 'kasir2' },
+  { id: 'u3', username: 'kasir1', name: 'Aisyah (Kasir Lahat)', role: 'CASHIER', branchId: 'b1', active: true, password: 'kasir1' },
+  { id: 'u4', username: 'kasir2', name: 'Beni (Kasir Pagar Alam)', role: 'CASHIER', branchId: 'b2', active: true, password: 'kasir2' },
 ];
 
 const INITIAL_BRANCHES = [
-  { id: 'b1', name: 'Cabang Utama Jakarta', address: 'Jl. Sudirman No. 45, Jakarta Selatan', phone: '021-5551234' },
-  { id: 'b2', name: 'Cabang Bandung', address: 'Jl. Dago No. 12, Coblong, Bandung', phone: '022-7775678' },
+  { id: 'b1', name: 'Cabang Lahat', address: 'Jl. Mayor Ruslan No. 45, Lahat', phone: '0731-555123' },
+  { id: 'b2', name: 'Cabang Pagar Alam', address: 'Jl. Kombes H. Umar No. 12, Pagar Alam', phone: '0730-777567' },
   { id: 'b3', name: 'Cabang Surabaya', address: 'Jl. Pemuda No. 88, Surabaya Pusat', phone: '031-8889900' },
 ];
 

@@ -39,8 +39,8 @@ import AiAssistantView from './components/AiAssistantView';
 import { api } from './services/api';
 
 const DEMO_BRANCHES: Branch[] = [
-  { id: 'b1', name: 'Cabang lahat', address: 'Jl. melati, lahat', phone: '021-5551234' },
-  { id: 'b2', name: 'Cabang pagar alam', address: 'Jl. bukit, pagar alam', phone: '022-4445678' }
+  { id: 'b1', name: 'Cabang Lahat', address: 'Jl. Mayor Ruslan No. 45, Lahat', phone: '0731-555123' },
+  { id: 'b2', name: 'Cabang Pagar Alam', address: 'Jl. Kombes H. Umar No. 102, Pagar Alam', phone: '0730-444567' }
 ];
 
 export default function App() {
@@ -179,7 +179,7 @@ export default function App() {
     let name = 'Pak Adi Owner';
     if (roleVal === Role.ADMIN) name = 'Admin Siswo';
     if (roleVal === Role.MANAGER) name = 'Manajer Rani';
-    if (roleVal === Role.CASHIER) name = 'Kasir Dani';
+    if (roleVal === Role.CASHIER) name = 'Kasir Aisyah';
 
     const nextUsr = { id: 'usr_' + roleVal, username: roleVal.toLowerCase(), name, role: roleVal, branchId: roleVal === Role.CASHIER ? 'b1' : 'all' };
     setActiveUser(nextUsr);
@@ -414,7 +414,7 @@ export default function App() {
         onLogout={handleLogout}
         notificationsCount={lowStockAlerts.length}
         onOpenNotifications={() => setCurrentView('inventory')}
-        activeBranchName={DEMO_BRANCHES.find(b => b.id === currentBranchId)?.name || 'Jakarta'}
+        activeBranchName={DEMO_BRANCHES.find(b => b.id === currentBranchId)?.name || 'Lahat'}
       />
 
       {/* Main workspace container panel router */}

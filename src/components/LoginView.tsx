@@ -183,8 +183,8 @@ export default function LoginView({ onLoginSuccess }: LoginViewProps) {
               [
                 { name: 'Super Admin', username: 'admin', role: Role.ADMIN, displayRole: 'Admin' },
                 { name: 'ndy (Owner)', username: 'owner', role: Role.OWNER, displayRole: 'Owner' },
-                { name: 'Aisyah (lahat)', username: 'kasir1', role: Role.CASHIER, displayRole: 'Kasir Lahat' },
-                { name: 'Beni (Pagar alam)', username: 'kasir2', role: Role.CASHIER, displayRole: 'Kasir Pagar alam' }
+                { name: 'Aisyah (Lahat)', username: 'kasir1', role: Role.CASHIER, displayRole: 'Kasir Lahat' },
+                { name: 'Beni (Pagar Alam)', username: 'kasir2', role: Role.CASHIER, displayRole: 'Kasir Pgr' }
               ].map((fallbackUsr, idx) => (
                 <button
                   key={idx}

@@ -391,7 +391,7 @@ export default function AuditView({
                         {/* Metadata branch info */}
                         <td className="p-4">
                           <span className="font-mono text-xs text-slate-400">
-                            {log.ip || '192.168.1.1'} ({log.branchId === 'b1' ? 'Cabang Jakarta' : 'Cabang Bandung'})
+                            {log.ip || '192.168.1.1'} ({log.branchId === 'b1' ? 'Cabang Lahat' : 'Cabang Pagar Alam'})
                           </span>
                         </td>
 

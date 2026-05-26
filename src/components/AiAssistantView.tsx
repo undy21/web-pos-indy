@@ -181,7 +181,7 @@ export default function AiAssistantView({
       .map(([name, qty]) => `${name}`);
 
     return {
-      branchName: currentBranchId === 'b1' ? 'Cabang Jakarta Selatan' : 'Cabang Bandung',
+      branchName: currentBranchId === 'b1' ? 'Cabang Lahat' : 'Cabang Pagar Alam',
       lowStockCount: lowStockItems.length,
       lowStockList: lowStockItems.join(', '),
       revenueToday: totalRevenue,
@@ -288,7 +288,7 @@ export default function AiAssistantView({
               <Sparkles className="w-5 h-5 text-indigo-600" />
               <span>Sajian Indy AI Admin System (Gemini)</span>
             </h1>
-            <p className="text-[11px] text-slate-500">Menganalisis basis data Google Sheets milik cabang {currentBranchId === 'b1' ? 'Jakarta' : 'Bandung'} secara instan.</p>
+            <p className="text-[11px] text-slate-500">Menganalisis basis data Google Sheets milik cabang {currentBranchId === 'b1' ? 'Lahat' : 'Pagar Alam'} secara instan.</p>
           </div>
           <span className="text-[9px] bg-indigo-50 border border-indigo-200 text-indigo-600 font-bold px-2.5 py-1 rounded">
             🤖 Model: gemini-3.5-flash

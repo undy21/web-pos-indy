@@ -1,0 +1,6 @@
+{
+  "name": "POS Kasir Google Sheets",
+  "description": "Sajian Indy - Aplikasi Kasir (Point of Sale) modern terintegrasi dengan Google Sheets sebagai database melalui Google Apps Script dan Gemini AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -69,7 +69,7 @@ const INITIAL_TRANSACTIONS = [
     customerId: 'c1',
     branchId: 'b1',
     cashierId: 'u3',
-    cashierName: 'Siti'
+    cashierName: 'Aisyah'
   },
   {
     id: 'TRX-20260525-002',
@@ -83,7 +83,7 @@ const INITIAL_TRANSACTIONS = [
     customerId: '',
     branchId: 'b1',
     cashierId: 'u3',
-    cashierName: 'Siti'
+    cashierName: 'Aisyah'
   }
 ];
 

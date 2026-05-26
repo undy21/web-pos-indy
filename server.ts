@@ -138,7 +138,7 @@ app.post("/api/ai/business-insights", async (req, res) => {
    * Kami menyarankan untuk memesan ulang (Purchase Order) minimal **50 unit** sekarang ke supplier *PT Sumber Pangan Makmur*.
    
 3. **Efisiensi Rencana Arus Kas**:
-   * Biaya operasional cabang Jakarta saat ini bersumber pada pengeluaran ATK sebesar Rp 150.000. Rasio biaya operasional terhadap total omzet berada di angka **18.4%** yang terhitung cukup sehat untuk fase scaling.`
+   * Biaya operasional cabang Lahat saat ini bersumber pada pengeluaran ATK sebesar Rp 150.000. Rasio biaya operasional terhadap total omzet berada di angka **18.4%** yang terhitung cukup sehat untuk fase scaling.`
     });
   }
 

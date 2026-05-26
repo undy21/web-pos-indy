@@ -60,9 +60,9 @@ export class MockDatabase {
   }
 
   static init() {
-    const isV3 = localStorage.getItem('pos_db_v3_market_prices');
+    const isV4 = localStorage.getItem('pos_db_v4_lahat_and_pagar_alam');
 
-    if (!localStorage.getItem('pos_db_initialized') || !isV3) {
+    if (!localStorage.getItem('pos_db_initialized') || !isV4) {
       this.set('users', INITIAL_USERS);
       this.set('branches', INITIAL_BRANCHES);
       this.set('products', INITIAL_PRODUCTS);
@@ -82,7 +82,7 @@ export class MockDatabase {
           customerId: 'c1',
           branchId: 'b1',
           cashierId: 'u3',
-          cashierName: 'Siti'
+          cashierName: 'Aisyah'
         },
         {
           id: 'TRX-20260525-002',
@@ -96,7 +96,7 @@ export class MockDatabase {
           customerId: '',
           branchId: 'b1',
           cashierId: 'u3',
-          cashierName: 'Siti'
+          cashierName: 'Aisyah'
         }
       ]);
       
@@ -134,7 +134,7 @@ export class MockDatabase {
       this.set('notifications', NOTIFICATIONS);
 
       localStorage.setItem('pos_db_initialized', 'true');
-      localStorage.setItem('pos_db_v3_market_prices', 'true');
+      localStorage.setItem('pos_db_v4_lahat_and_pagar_alam', 'true');
     }
   }
 

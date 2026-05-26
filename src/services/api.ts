@@ -352,9 +352,6 @@ export class ApiService {
         return true;
       }
 
-      case 'getVouchers':
-        return MockDatabase.getVouchers();
-      
       case 'readNotification': {
         let notifs = MockDatabase.getNotifications();
         notifs = notifs.map(n => n.id === payload.id ? { ...n, read: true } : n);

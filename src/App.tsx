@@ -39,8 +39,8 @@ import AiAssistantView from './components/AiAssistantView';
 import { api } from './services/api';
 
 const DEMO_BRANCHES: Branch[] = [
-  { id: 'b1', name: 'Cabang Jakarta Selatan', address: 'Jl. Sudirman No 45, Jakarta', phone: '021-5551234' },
-  { id: 'b2', name: 'Cabang Bandung', address: 'Jl. Dago No. 102, Bandung', phone: '022-4445678' }
+  { id: 'b1', name: 'Cabang lahat', address: 'Jl. melati, lahat', phone: '021-5551234' },
+  { id: 'b2', name: 'Cabang pagar alam', address: 'Jl. bukit, pagar alam', phone: '022-4445678' }
 ];
 
 export default function App() {

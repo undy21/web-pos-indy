@@ -10,7 +10,6 @@ const INITIAL_USERS = [
 const INITIAL_BRANCHES = [
   { id: 'b1', name: 'Cabang Lahat', address: 'Jl. Mayor Ruslan No. 45, Lahat', phone: '0731-555123' },
   { id: 'b2', name: 'Cabang Pagar Alam', address: 'Jl. Kombes H. Umar No. 12, Pagar Alam', phone: '0730-777567' },
-  { id: 'b3', name: 'Cabang Surabaya', address: 'Jl. Pemuda No. 88, Surabaya Pusat', phone: '031-8889900' },
 ];
 
 const INITIAL_PRODUCTS: Product[] = [
@@ -29,14 +28,14 @@ const INITIAL_PRODUCTS: Product[] = [
 ];
 
 const INITIAL_CUSTOMERS: Customer[] = [
-  { id: 'c1', name: 'Ahmad Subardjo', phone: '081234567890', email: 'ahmad@gmail.com', point: 1250, memberRank: 'GOLD', notes: 'Grup pedagang lokal' },
-  { id: 'c2', name: 'Lina Marlina', phone: '085777888999', email: 'lina@yahoo.com', point: 420, memberRank: 'SILVER', notes: 'Sering membeli paketan roti' },
-  { id: 'c3', name: 'Hadi Wijaya', phone: '081999888777', email: 'hadi@gmail.com', point: 15, memberRank: 'REGULAR', notes: 'Pelanggan harian kopi' },
+  { id: 'c1', name: 'asep', phone: '081234567890', email: 'sasep@gmail.com', point: 1250, memberRank: 'GOLD', notes: 'Grup pedagang lokal' },
+  { id: 'c2', name: 'Lunawati', phone: '085777888999', email: 'luna@yahoo.com', point: 420, memberRank: 'SILVER', notes: 'Sering membeli paketan roti' },
+  { id: 'c3', name: 'Hasan supradi', phone: '081999888777', email: 'supradi@gmail.com', point: 15, memberRank: 'REGULAR', notes: 'Pelanggan harian kopi' },
 ];
 
 const INITIAL_SUPPLIERS: Supplier[] = [
-  { id: 's1', name: 'PT Sumber Pangan Makmur', contact: 'Budi Santoso', phone: '021-998877', address: 'Kawasan Industri Pulogadung Blok C, Jakarta' },
-  { id: 's2', name: 'CV Berkah Distribusi Indo', contact: 'Mega Lestari', phone: '0812-3344-5566', address: 'Komp Gading Griya Lestari, Bandung' },
+  { id: 's1', name: 'PT Sumber Pangan swadaya', contact: 'Budi Hartono', phone: '021-998877', address: 'Kawasan Industri lahat Blok C, lahat' },
+  { id: 's2', name: 'CV Berkah Distribusi Indo', contact: 'susana', phone: '0812-3344-5566', address: 'Komp alam indah, pagar alam' },
 ];
 
 const INITIAL_VOUCHERS: Voucher[] = [
@@ -60,9 +59,9 @@ export class MockDatabase {
   }
 
   static init() {
-    const isV4 = localStorage.getItem('pos_db_v4_lahat_and_pagar_alam');
+    const isV5 = localStorage.getItem('pos_db_v5_sync_changes');
 
-    if (!localStorage.getItem('pos_db_initialized') || !isV4) {
+    if (!localStorage.getItem('pos_db_initialized') || !isV5) {
       this.set('users', INITIAL_USERS);
       this.set('branches', INITIAL_BRANCHES);
       this.set('products', INITIAL_PRODUCTS);
@@ -119,7 +118,7 @@ export class MockDatabase {
       ]);
 
       this.set('purchases', [
-        { id: 'p1', code: 'PO-20260520-001', supplierId: 's1', supplierName: 'PT Sumber Pangan Makmur', date: '2026-05-20', totalAmount: 600000, status: 'RECEIVED', branchId: 'b1', items: [{ sku: 'KOP-SCS-001', productName: 'Kopi Susu Gula Aren Tubruk', qty: 120, buyPrice: 5000 }] }
+        { id: 'p1', code: 'PO-20260520-001', supplierId: 's1', supplierName: 'PT Sumber Pangan swadaya', date: '2026-05-20', totalAmount: 600000, status: 'RECEIVED', branchId: 'b1', items: [{ sku: 'KOP-SCS-001', productName: 'Kopi Susu Gula Aren Tubruk', qty: 120, buyPrice: 5000 }] }
       ]);
 
       this.set('audit_logs', [
@@ -134,7 +133,7 @@ export class MockDatabase {
       this.set('notifications', NOTIFICATIONS);
 
       localStorage.setItem('pos_db_initialized', 'true');
-      localStorage.setItem('pos_db_v4_lahat_and_pagar_alam', 'true');
+      localStorage.setItem('pos_db_v5_sync_changes', 'true');
     }
   }
 

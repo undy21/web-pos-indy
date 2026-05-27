@@ -135,7 +135,7 @@ app.post("/api/ai/business-insights", async (req, res) => {
    
 2. **Prediksi Kritis Berdasarkan Log Stok**:
    * **Roti Gandum Sehat** saat ini tersisa **15 unit**. Menilik rata-rata penjualan 8 unit per 2 hari, produk ini diprediksi **habis dalam waktu 36 jam ke depan**.
-   * Kami menyarankan untuk memesan ulang (Purchase Order) minimal **50 unit** sekarang ke supplier *PT Sumber Pangan Makmur*.
+   * Kami menyarankan untuk memesan ulang (Purchase Order) minimal **50 unit** sekarang ke supplier *PT Sumber Pangan swadaya*.
    
 3. **Efisiensi Rencana Arus Kas**:
    * Biaya operasional cabang Lahat saat ini bersumber pada pengeluaran ATK sebesar Rp 150.000. Rasio biaya operasional terhadap total omzet berada di angka **18.4%** yang terhitung cukup sehat untuk fase scaling.`
